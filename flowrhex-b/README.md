@@ -14,6 +14,6 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 
-[Component Break-down Flowrhex-B](https://docs.google.com/document/d/1yf_iwsLU8TmCEThjPeCwSogHAX1RPjBDMtEmcC3QYQg/edit?tab=t.0)
+
 
 
