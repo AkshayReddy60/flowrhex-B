@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1748345772945" clover="3.2.0">
-  <project timestamp="1748345772946" name="All files">
-    <metrics statements="45" coveredstatements="45" conditionals="15" coveredconditionals="15" methods="28" coveredmethods="28" elements="88" coveredelements="88" complexity="0" loc="45" ncloc="45" packages="7" files="7" classes="7"/>
+<coverage generated="1748420969559" clover="3.2.0">
+  <project timestamp="1748420969560" name="All files">
+    <metrics statements="51" coveredstatements="51" conditionals="15" coveredconditionals="15" methods="29" coveredmethods="29" elements="95" coveredelements="95" complexity="0" loc="51" ncloc="51" packages="8" files="8" classes="8"/>
     <package name="About">
       <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
-      <file name="About.jsx" path="C:\Users\aksha\OneDrive\Desktop\client-2\flowrhex-B\flowrhex-b\src\Components\About\About.jsx">
+      <file name="About.jsx" path="C:\Users\aksha\OneDrive\Desktop\client-2\flowrhex-B\flowrhex-b\src\components\About\About.jsx">
         <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
         <line num="9" count="1" type="stmt"/>
         <line num="10" count="24" type="stmt"/>
@@ -22,16 +22,20 @@
       </file>
     </package>
     <package name="Contact">
-      <metrics statements="2" coveredstatements="2" conditionals="5" coveredconditionals="5" methods="3" coveredmethods="3"/>
-      <file name="Contact.jsx" path="C:\Users\aksha\OneDrive\Desktop\client-2\flowrhex-B\flowrhex-b\src\Components\Contact\Contact.jsx">
-        <metrics statements="2" coveredstatements="2" conditionals="5" coveredconditionals="5" methods="3" coveredmethods="3"/>
-        <line num="20" count="4" type="stmt"/>
-        <line num="59" count="12" type="stmt"/>
+      <metrics statements="6" coveredstatements="6" conditionals="5" coveredconditionals="5" methods="3" coveredmethods="3"/>
+      <file name="Contact.jsx" path="C:\Users\aksha\OneDrive\Desktop\client-2\flowrhex-B\flowrhex-b\src\components\Contact\Contact.jsx">
+        <metrics statements="6" coveredstatements="6" conditionals="5" coveredconditionals="5" methods="3" coveredmethods="3"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="26" count="4" type="stmt"/>
+        <line num="68" count="12" type="stmt"/>
       </file>
     </package>
     <package name="Navbar">
       <metrics statements="13" coveredstatements="13" conditionals="8" coveredconditionals="8" methods="6" coveredmethods="6"/>
-      <file name="Navbar.jsx" path="C:\Users\aksha\OneDrive\Desktop\client-2\flowrhex-B\flowrhex-b\src\Components\Navbar\Navbar.jsx">
+      <file name="Navbar.jsx" path="C:\Users\aksha\OneDrive\Desktop\client-2\flowrhex-B\flowrhex-b\src\components\Navbar\Navbar.jsx">
         <metrics statements="13" coveredstatements="13" conditionals="8" coveredconditionals="8" methods="6" coveredmethods="6"/>
         <line num="14" count="1" type="stmt"/>
         <line num="15" count="14" type="stmt"/>
@@ -48,24 +52,32 @@
         <line num="178" count="1" type="stmt"/>
       </file>
     </package>
+    <package name="Productitems">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Productitem.jsx" path="C:\Users\aksha\OneDrive\Desktop\client-2\flowrhex-B\flowrhex-b\src\components\Productitems\Productitem.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="Products">
-      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7"/>
-      <file name="Products.jsx" path="C:\Users\aksha\OneDrive\Desktop\client-2\flowrhex-B\flowrhex-b\src\Components\Products\Products.jsx">
-        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="110" count="3" type="stmt"/>
-        <line num="133" count="13" type="stmt"/>
-        <line num="153" count="11" type="stmt"/>
-        <line num="173" count="16" type="stmt"/>
-        <line num="189" count="1" type="stmt"/>
-        <line num="218" count="4" type="stmt"/>
-        <line num="234" count="3" type="stmt"/>
+      <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7"/>
+      <file name="Products.jsx" path="C:\Users\aksha\OneDrive\Desktop\client-2\flowrhex-B\flowrhex-b\src\components\Products\Products.jsx">
+        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="113" count="3" type="stmt"/>
+        <line num="127" count="13" type="stmt"/>
+        <line num="138" count="10" type="stmt"/>
+        <line num="149" count="17" type="stmt"/>
+        <line num="165" count="1" type="stmt"/>
+        <line num="194" count="4" type="stmt"/>
+        <line num="210" count="3" type="stmt"/>
+        <line num="219" count="1" type="stmt"/>
       </file>
     </package>
     <package name="Services">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <file name="Services.jsx" path="C:\Users\aksha\OneDrive\Desktop\client-2\flowrhex-B\flowrhex-b\src\Components\Services\Services.jsx">
+      <file name="Services.jsx" path="C:\Users\aksha\OneDrive\Desktop\client-2\flowrhex-B\flowrhex-b\src\components\Services\Services.jsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="11" count="1" type="stmt"/>
         <line num="55" count="3" type="stmt"/>
@@ -74,7 +86,7 @@
     </package>
     <package name="Servicesection">
       <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-      <file name="Servicesection.jsx" path="C:\Users\aksha\OneDrive\Desktop\client-2\flowrhex-B\flowrhex-b\src\Components\Servicesection\Servicesection.jsx">
+      <file name="Servicesection.jsx" path="C:\Users\aksha\OneDrive\Desktop\client-2\flowrhex-B\flowrhex-b\src\components\Servicesection\Servicesection.jsx">
         <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
         <line num="5" count="12" type="stmt"/>
         <line num="14" count="24" type="stmt"/>
@@ -82,7 +94,7 @@
     </package>
     <package name="Technology">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <file name="Technology.jsx" path="C:\Users\aksha\OneDrive\Desktop\client-2\flowrhex-B\flowrhex-b\src\Components\Technology\Technology.jsx">
+      <file name="Technology.jsx" path="C:\Users\aksha\OneDrive\Desktop\client-2\flowrhex-B\flowrhex-b\src\components\Technology\Technology.jsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="15" count="1" type="stmt"/>
         <line num="58" count="5" type="stmt"/>

@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for Servicesection/Servicesection.jsx</title>
+    <title>Code coverage report for Productitems/Productitem.jsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">Servicesection</a> Servicesection.jsx</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">Productitems</a> Productitem.jsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
@@ -96,20 +96,30 @@
 <a name='L31'></a><a href='#L31'>31</a>
 <a name='L32'></a><a href='#L32'>32</a>
 <a name='L33'></a><a href='#L33'>33</a>
-<a name='L34'></a><a href='#L34'>34</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -130,38 +140,43 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";  // Add this import
+import productfour from '../../assets/productfour.png';
 &nbsp;
-function ServiceSection({ title, description, image, reverse }) {
+function ProductItem() {
   return (
-    &lt;div className={`shadow-md p-6 sm:p-8 my-6 mx-2 sm:mx-4 rounded-lg flex flex-col md:flex-row ${reverse ? 'md:flex-row-reverse' : ''}`}&gt;
-      &lt;div className="md:w-1/2 p-2 sm:p-4"&gt;
-        &lt;img src={image} alt={title} className="w-full rounded-md object-cover" /&gt;
-      &lt;/div&gt;
-      &lt;div className="md:w-1/2 p-2 sm:p-4 flex flex-col justify-center text-center md:text-left"&gt;
-        &lt;h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3 sm:mb-4"&gt;{title}&lt;/h2&gt;
-&nbsp;
-        {description.map((para, index) =&gt; (
-          &lt;p
-            key={index}
-            className="font-roboto text-[14px] sm:text-[15px] font-normal leading-[22px] sm:leading-[24px] text-[#919899] mb-4"
-          &gt;
-            {para}
-          &lt;/p&gt;
-        ))}
-&nbsp;
+    &lt;section className="py-16  px-6"&gt;
+      &lt;div className="max-w-4xl mx-auto"&gt;
+        &lt;img
+          src={productfour}
+          alt="Customized Unit"
+          className="w-full h-auto rounded-md mb-8 object-cover shadow-md"
+        /&gt;
+        &lt;h2 className="text-3xl font-bold text-slate-800 mb-4"&gt;Customized Unit&lt;/h2&gt;
+        &lt;p className="text-gray-700 text-base leading-relaxed mb-4"&gt;
+          With our innovative and technological skills, we have kept scope for customized units as per project requirements.
+          Along with our dedicated products, we intend to develop new products tailored to a particular process requirement on lab scale
+          and scale them to meet your production needs.
+        &lt;/p&gt;
+        &lt;p className="text-gray-700 text-base leading-relaxed mb-4"&gt;
+          Tubular flow reactor customization is one of our specialties. Multiple inlet-outlet tubular reactors as per your
+          process requirement for multistep processing, residence time and scale-up can be provided at highly affordable costs.
+        &lt;/p&gt;
+        &lt;p className="font-medium text-[24px] leading-[24px] text-[rgb(6,115,108)] font-['Roboto'] "&gt;
+          Want to learn more about customized products? Reach out to us…
+        &lt;/p&gt;
         &lt;Link
           to="/contact"
-          className="bg-gray-800 text-white px-5 py-3 rounded hover:bg-gray-700 w-max mx-auto md:mx-0"
+          className="inline-block bg-[#1a4e58] text-white px-6 py-3 rounded-md hover:bg-red-700 transition duration-300"
         &gt;
           Contact Us
         &lt;/Link&gt;
       &lt;/div&gt;
-    &lt;/div&gt;
+    &lt;/section&gt;
   );
 }
 &nbsp;
-export default ServiceSection;
+export default ProductItem;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->

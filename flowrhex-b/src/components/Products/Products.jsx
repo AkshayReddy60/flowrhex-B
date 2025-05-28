@@ -1,14 +1,16 @@
 import React from "react";
 import { FaExchangeAlt, FaFlask, FaHome, FaGem, FaCheck } from "react-icons/fa";
 import { Link } from "react-router-dom";
-//import productone from "../../assets/productone";
-import producttwo from "../../assets/producttwo.png";
-import productthree from "../../assets/productthree.png";
-//import productfour from "../../assets/productfour.png";
 import { motion } from "framer-motion";
 import { GiNestedHexagons } from "react-icons/gi";
 
-// Highlights section
+import productone from "../../assets/productone.png";
+import producttwo from "../../assets/producttwo.png";
+import productthree from "../../assets/productthree.png";
+
+import ProductItem from "../Productitems/Productitem";
+
+// Highlight points
 const productItems = [
   {
     icon: <FaExchangeAlt size={24} />,
@@ -28,32 +30,32 @@ const productItems = [
   },
 ];
 
-// Product data
+// List of all 4 products
 const productData = [
- /* {
+  {
     image: productone,
-    series: "FRHexeR Glass Series",
-    title: "FRHexeR – 10T / 50T",
+    series: "FRHexeR Lab Series (Glass, SS316, PTFE)",
+    title: "FRHexeR – 1T / 5T",
     operatingConditions: [
-      "Operating Temperature -30 ℃ to 200 ℃",
-      "Operating Pressure Up to 10 bar",
-      "Operating Volume: 1 mL/module , 6 mL/module",
-      "Operating Flow Rate: 0 to 25 mL/min, 20 to 120 mL/min",
+      "Operating Temperature -10 ℃ to 100 ℃",
+      "Operating Pressure Up to 6 bar",
+      "Operating Volume 0.5 mL/module, 1 mL/module",
+      "Operating Flow Rate: 0 to 10 mL/min, 0 to 25 mL/min",
     ],
     applications: [
       "Liquid-Liquid reactions",
-      "Liquid-gas reactions",
-      "Multi-Step reactions",
       "Photochemical reactions",
+      "Basic flow evaluation",
     ],
     features: [
-      "High heat and mass transfer",
+      "Transparent body (glass/PTFE)",
       "Low volume reactor",
-      "Suitable for lab and kilo scale",
+      "Suitable for lab scale",
       "Flexible assembly",
-      "Wide chemical compatibility",
+      "Easy visual inspection",
+      "Cost effective",
     ],
-  },*/
+  },
   {
     image: producttwo,
     series: "FRHexeR Metal Series (SS316, Hastelloy - C276)",
@@ -103,12 +105,13 @@ const productData = [
       "MOC selective chemical compatibility",
     ],
   },
+  
 ];
 
 // Reusable component
 function ProductDetails({ image, series, title, operatingConditions, applications, features }) {
   return (
-    <section className=" py-16 px-6">
+    <section className="py-16 px-6">
       <div className="max-w-5xl mx-auto">
         <div className="mb-8">
           <img src={image} alt={series} className="rounded-md shadow-md w-full" />
@@ -119,16 +122,7 @@ function ProductDetails({ image, series, title, operatingConditions, application
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-lg text-gray-800">
             <div>
               <h5 className="font-semibold mb-2 text-base text-gray-900">Operating Conditions</h5>
-              <ul
-  className="space-y-2"
-  style={{
-    fontFamily: "'Roboto', sans-serif",
-    fontSize: '15px',
-    fontWeight: 500,
-    lineHeight: '21px',
-    color: 'rgb(138, 138, 138)',
-  }}
->
+              <ul className="space-y-2" style={styles.listStyle}>
                 {operatingConditions.map((item, i) => (
                   <li key={i} className="flex items-start">
                     <FaCheck className="text-red-500 mr-2 mt-1" />
@@ -139,16 +133,7 @@ function ProductDetails({ image, series, title, operatingConditions, application
             </div>
             <div>
               <h5 className="font-semibold mb-2 text-base text-gray-900">Applications</h5>
-              <ul
-  className="space-y-2"
-  style={{
-    fontFamily: "'Roboto', sans-serif",
-    fontSize: '15px',
-    fontWeight: 500,
-    lineHeight: '21px',
-    color: 'rgb(138, 138, 138)',
-  }}
->
+              <ul className="space-y-2" style={styles.listStyle}>
                 {applications.map((item, i) => (
                   <li key={i} className="flex items-start">
                     <FaCheck className="text-red-500 mr-2 mt-1" />
@@ -159,16 +144,7 @@ function ProductDetails({ image, series, title, operatingConditions, application
             </div>
             <div>
               <h5 className="font-semibold mb-2 text-base text-gray-900">Features</h5>
-              <ul
-  className="space-y-2"
-  style={{
-    fontFamily: "'Roboto', sans-serif",
-    fontSize: '15px',
-    fontWeight: 500,
-    lineHeight: '21px',
-    color: 'rgb(138, 138, 138)',
-  }}
->
+              <ul className="space-y-2" style={styles.listStyle}>
                 {features.map((item, i) => (
                   <li key={i} className="flex items-start">
                     <FaCheck className="text-red-500 mr-2 mt-1" />
@@ -188,7 +164,7 @@ function ProductDetails({ image, series, title, operatingConditions, application
 function Products() {
   return (
     <div className="font-sans text-gray-700">
-      {/* Hero Header */}
+      {/* Header */}
       <section className="bg-[#234146] text-white py-16">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h1 className="text-4xl font-bold">Products</h1>
@@ -198,8 +174,8 @@ function Products() {
         </div>
       </section>
 
-      {/* Service Introduction */}
-      <section className="py-12 ">
+      {/* Intro */}
+      <section className="py-12">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <h1 className="text-3xl font-bold mb-4">Our Products</h1>
           <p className="text-lg py-6 text-gray-500">
@@ -208,63 +184,46 @@ function Products() {
         </div>
       </section>
 
-      {/* Highlights Section */}
+      {/* Highlights */}
       <section className="py-16 bg-gray-50 text-center">
-      <h2 className="font-roboto text-[40px] font-medium leading-[38px] text-[#11333A] mb-12">
-  Utilize Our Products
-</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 max-w-6xl mx-auto px-6">
-        {productItems.map((item, index) => (
-          <div key={index} className="flex flex-col items-center text-slate-800">
-            <motion.div
-              whileHover={{ scale: 1.2 }}
-              transition={{ type: "spring", stiffness: 300 }}
-              className="border-2 border-slate-800 p-4 rounded-md mb-4"
-            >
-              {item.icon}
-            </motion.div>
-            <p className="font-medium text-lg text-center">{item.text}</p>
-          </div>
-        ))}
-      </div>
-    </section>
+        <h2 className="font-roboto text-[40px] font-medium leading-[38px] text-[#11333A] mb-12">
+          Utilize Our Products
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 max-w-6xl mx-auto px-6">
+          {productItems.map((item, index) => (
+            <div key={index} className="flex flex-col items-center text-slate-800">
+              <motion.div
+                whileHover={{ scale: 1.2 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="border-2 border-slate-800 p-4 rounded-md mb-4"
+              >
+                {item.icon}
+              </motion.div>
+              <p className="font-medium text-lg text-center">{item.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
-      {/* Product Details Sections */}
+      {/* Render All Products */}
       {productData.map((product, index) => (
         <ProductDetails key={index} {...product} />
       ))}
-
-      {/* Custom Unit Section */}
-      {/*<section className="py-16 bg-gray-100 px-6">
-        <div className="max-w-4xl mx-auto">
-          <img
-            src={productfour}
-            alt="Customized Unit"
-            className="w-full h-auto rounded-md mb-8 object-cover shadow-md"
-          />
-          <h2 className="text-3xl font-bold text-slate-800 mb-4">Customized Unit</h2>
-          <p className="text-gray-700 text-base leading-relaxed mb-4">
-            With our innovative and technological skills, we have kept scope for customized units as per project requirements.
-            Along with our dedicated products, we intend to develop new products tailored to a particular process requirement on lab scale
-            and scale them to meet your production needs.
-          </p>
-          <p className="text-gray-700 text-base leading-relaxed mb-4">
-            Tubular flow reactor customization is one of our specialties. Multiple inlet-outlet tubular reactors as per your
-            process requirement for multistep processing, residence time and scale-up can be provided at highly affordable costs.
-          </p>
-         <p className="font-medium text-[24px] leading-[24px] text-[rgb(6,115,108)] font-['Roboto'] ">
-            Want to learn more about customized products? Reach out to us…
-          </p>
-          <Link
-            to="/contact"
-            className="inline-block bg-[#1a4e58] text-white px-6 py-3 rounded-md hover:bg-red-700 transition duration-300"
-          >
-            Contact Us
-          </Link>
-        </div>
-      </section>*/}
+      <ProductItem/>
     </div>
+    
   );
 }
+
+// Styling for list
+const styles = {
+  listStyle: {
+    fontFamily: "'Roboto', sans-serif",
+    fontSize: "15px",
+    fontWeight: 500,
+    lineHeight: "21px",
+    color: "rgb(138, 138, 138)",
+  },
+};
 
 export default Products;
