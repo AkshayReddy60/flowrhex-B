@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for Servicesection/Servicesection.jsx</title>
+    <title>Code coverage report for ProductDetailes/ProductThree.jsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">Servicesection</a> Servicesection.jsx</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">ProductDetailes</a> ProductThree.jsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -32,14 +32,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
@@ -95,21 +95,13 @@
 <a name='L30'></a><a href='#L30'>30</a>
 <a name='L31'></a><a href='#L31'>31</a>
 <a name='L32'></a><a href='#L32'>32</a>
-<a name='L33'></a><a href='#L33'>33</a>
-<a name='L34'></a><a href='#L34'>34</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">12x</span>
+<a name='L33'></a><a href='#L33'>33</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -129,39 +121,44 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from "react";
-import { Link } from "react-router-dom";
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// components/ProductDetails/ProductThree.jsx
+import React from "react";
+import ProductDetails from "./ProductDetailes";
+import productthree from "../../assets/productthree.png";
 &nbsp;
-function ServiceSection({ title, description, image, reverse }) {
-  return (
-    &lt;div className={`shadow-md p-6 sm:p-8 my-6 mx-2 sm:mx-4 rounded-lg flex flex-col md:flex-row ${reverse ? 'md:flex-row-reverse' : ''}`}&gt;
-      &lt;div className="md:w-1/2 p-2 sm:p-4"&gt;
-        &lt;img src={image} alt={title} className="w-full rounded-md object-cover" /&gt;
-      &lt;/div&gt;
-      &lt;div className="md:w-1/2 p-2 sm:p-4 flex flex-col justify-center text-center md:text-left"&gt;
-        &lt;h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3 sm:mb-4"&gt;{title}&lt;/h2&gt;
+const ProductThree = () =&gt; (
+  &lt;ProductDetails
+    image={productthree}
+    series="FRHexeR Industrial Series (SS316, Hastelloy, PTFE)"
+    title="FRHexeR – 100T / 500T"
+    operatingConditions={[
+      "Operating Temperature -10 ℃ to 200 ℃",
+      "Operating Pressure Up to 15 bar",
+      "Operating Volume &gt; 50 mL/module",
+      "Operating Flow Rate: &gt; 1 L/min",
+    ]}
+    applications={[
+      "Continuous manufacturing",
+      "Bulk chemical production",
+      "High throughput synthesis",
+    ]}
+    features={[
+      "Industrial-grade materials",
+      "Modular for scaling",
+      "High flow rate support",
+      "Excellent durability",
+      "Process automation ready",
+    ]}
+  /&gt;
+);
 &nbsp;
-        {description.map((para, index) =&gt; (
-          &lt;p
-            key={index}
-            className="font-roboto text-[14px] sm:text-[15px] font-normal leading-[22px] sm:leading-[24px] text-[#919899] mb-4"
-          &gt;
-            {para}
-          &lt;/p&gt;
-        ))}
-&nbsp;
-        &lt;Link
-          to="/contact"
-          className="bg-gray-800 text-white px-5 py-3 rounded hover:bg-gray-700 w-max mx-auto md:mx-0"
-        &gt;
-          Contact Us
-        &lt;/Link&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  );
-}
-&nbsp;
-export default ServiceSection;
+export default ProductThree;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->

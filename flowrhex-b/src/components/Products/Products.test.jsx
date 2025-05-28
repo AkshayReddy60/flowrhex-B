@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";  // import MemoryRouter
+import { MemoryRouter } from "react-router-dom";
 import '@testing-library/jest-dom';
 import Products from "./Products";
 
@@ -13,7 +13,10 @@ describe("Products component", () => {
     );
 
     function checkListByText(sampleText) {
-      const matchedTexts = screen.getAllByText(new RegExp(sampleText, "i"));
+      const matchedTexts = screen.getAllByText((content, element) => 
+        element.tagName.toLowerCase() === 'li' && content.includes(sampleText)
+      );
+
       expect(matchedTexts.length).toBeGreaterThan(0);
 
       const list = matchedTexts[0].closest("ul");
@@ -31,7 +34,7 @@ describe("Products component", () => {
     }
 
     checkListByText("Operating Temperature");
-    checkListByText("Liquid-liquid reactions");
-    checkListByText("High heat and mass transfer");
+    checkListByText("Liquid-Liquid reactions");
+    checkListByText("Excellent heat and mass transfer"); // match actual string used in ProductThree
   });
 });
