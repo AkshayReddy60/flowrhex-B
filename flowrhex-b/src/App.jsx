@@ -1,14 +1,14 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './Components/Navbar/Navbar';
-import Home from './Components/Home/Home';
-import Technology from './Components/Technology/Technology';
-import Products from './Components/Products/Products';
-import Services from './Components/Services/Services';
-import Contact from './Components/Contact/Contact';
-import TeamMemberDetails from './Components/Team/Teammembers';
-import About from './Components/About/About';
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home';
+import Technology from './components/Technology/Technology';
+import Products from './components/Products/Products';
+import Services from './components/Services/Services';
+import Contact from './components/Contact/Contact';
+import TeamMemberDetails from './components/Team/Teammembers';
+import About from './components/About/About';
 function App() {
   return (
     <Router>
