@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
@@ -25,21 +25,4 @@ function App() {
     </Router>
   );
 }
-
 export default App;
-=======
-
-import React from "react"
-
-function App() {
- 
-
-  return (
-    <>
-      
-    </>
-  )
-}
-
-export default App
->>>>>>> b9f50670f8dc3a9032f609b191e0c39bdcc89345
