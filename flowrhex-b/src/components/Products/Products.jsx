@@ -1,7 +1,7 @@
 import React from "react";
 import { FaExchangeAlt, FaFlask, FaHome, FaGem, FaCheck } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import productone from "../../assets/productone.png";
+import productone from "../../assets/productone";
 import producttwo from "../../assets/producttwo.png";
 import productthree from "../../assets/productthree.png";
 import productfour from "../../assets/productfour.png";
