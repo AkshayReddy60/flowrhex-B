@@ -1,7 +1,7 @@
 import React from "react";
 import { FaExchangeAlt, FaFlask, FaHome, FaGem, FaCheck } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import productone from "../../assets/productone";
+
 import producttwo from "../../assets/producttwo.png";
 import productthree from "../../assets/productthree.png";
 import productfour from "../../assets/productfour.png";
@@ -30,30 +30,6 @@ const productItems = [
 
 // Product data
 const productData = [
-  {
-    image: productone,
-    series: "FRHexeR Glass Series",
-    title: "FRHexeR – 10T / 50T",
-    operatingConditions: [
-      "Operating Temperature -30 ℃ to 200 ℃",
-      "Operating Pressure Up to 10 bar",
-      "Operating Volume: 1 mL/module , 6 mL/module",
-      "Operating Flow Rate: 0 to 25 mL/min, 20 to 120 mL/min",
-    ],
-    applications: [
-      "Liquid-Liquid reactions",
-      "Liquid-gas reactions",
-      "Multi-Step reactions",
-      "Photochemical reactions",
-    ],
-    features: [
-      "High heat and mass transfer",
-      "Low volume reactor",
-      "Suitable for lab and kilo scale",
-      "Flexible assembly",
-      "Wide chemical compatibility",
-    ],
-  },
   {
     image: producttwo,
     series: "FRHexeR Metal Series (SS316, Hastelloy - C276)",
