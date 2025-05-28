@@ -1,1 +1,0 @@
-[Technology Component](https://docs.google.com/document/d/1px7-6PyWKwwmVB9ySDwh0DaOfEhFXgMGgNkgVbaTakA/edit?tab=t.0#heading=h.vldtmd3alrpb)
