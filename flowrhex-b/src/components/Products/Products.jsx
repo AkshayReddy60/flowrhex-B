@@ -5,10 +5,10 @@ import { FaExchangeAlt, FaHome, FaGem } from "react-icons/fa";
 import { GiNestedHexagons } from "react-icons/gi";
 import { motion } from "framer-motion";
 
-import ProductOne from "../ProductDetailes/ProductOne";
-import ProductTwo from "../ProductDetailes/ProductTwo";
-import ProductThree from "../ProductDetailes/ProductThree";
-import ProductFour from "../ProductDetailes/ProductFour";
+import ProductOne from "../ProductDetails/ProductOne";
+import ProductTwo from "../ProductDetails/ProductTwo";
+import ProductThree from "../ProductDetails/ProductThree";
+import ProductFour from "../ProductDetails/ProductFour";
 import Footer from "../Footer/Footer";
 
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './Components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import Technology from './components/Technology/Technology';
-import Products from './components/Products/Products';
+import Products from './Components/Products/Products';
 import Services from './components/Services/Services';
 import Contact from './components/Contact/Contact';
 import TeamMemberDetails from './components/Team/Teammembers';

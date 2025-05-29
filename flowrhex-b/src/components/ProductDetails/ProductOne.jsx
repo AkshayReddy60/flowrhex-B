@@ -1,12 +1,12 @@
 // components/ProductDetails/ProductOne.jsx
 import React from "react";
 
-import productone from "../../assets/productone.png";
+import first from '../../assetes/first.png';
 import ProductDetails from "./ProductDetailes";
 
 const ProductOne = () => (
   <ProductDetails
-    image={productone}
+    image={first}
     series="FRHexeR Lab Series (Glass, SS316, PTFE)"
     title="FRHexeR – 1T / 5T"
     operatingConditions={[
