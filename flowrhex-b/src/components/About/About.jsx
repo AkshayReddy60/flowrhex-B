@@ -1,10 +1,11 @@
-import { FaGem, FaCamera, FaCloud, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
+import { FaGem, FaCloud, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 import { BiSolidTagAlt } from 'react-icons/bi';
 import { Link, useNavigate } from 'react-router-dom';
 import cardone from '../../assets/cardone.png';
 import cardtwo from '../../assets/cardtwo.png';
 import cardthird from '../../assets/cardthird.png';
 import { motion } from "framer-motion";
+import Footer from '../Footer/Footer';
 
 const MotionIcon = ({ IconComponent }) => (
   <motion.div
@@ -188,6 +189,7 @@ const About = () => {
           </ul>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 };

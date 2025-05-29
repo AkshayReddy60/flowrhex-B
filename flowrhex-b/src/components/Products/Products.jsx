@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 import { FaExchangeAlt, FaHome, FaGem } from "react-icons/fa";
 import { GiNestedHexagons } from "react-icons/gi";
 import { motion } from "framer-motion";
-import ProductItem from "../Productitems/Productitem";
+
 import ProductOne from "../ProductDetailes/ProductOne";
 import ProductTwo from "../ProductDetailes/ProductTwo";
 import ProductThree from "../ProductDetailes/ProductThree";
+import ProductFour from "../ProductDetailes/ProductFour";
+import Footer from "../Footer/Footer";
 
 
 
@@ -59,7 +61,8 @@ function Products() {
       <ProductOne />
       <ProductTwo/>
       <ProductThree />
-      <ProductItem />
+      <ProductFour/>
+      <Footer/>
     </div>
   );
 }

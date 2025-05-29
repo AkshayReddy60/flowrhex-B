@@ -4,6 +4,7 @@ import { FaMapMarkerAlt, FaUser } from "react-icons/fa";
 import { MdEmail, MdPhone, MdSubject, MdMessage, MdOutlinePhoneAndroid } from "react-icons/md";
 import { motion } from "framer-motion";
 import maps from "../../assets/maps.png";
+import Footer from "../Footer/Footer";
 
 function Contact({
   pageTitle = "Contact Us",
@@ -151,6 +152,7 @@ function Contact({
 
         </div>
       </section>
+      <Footer/>
     </div>
   );
 }

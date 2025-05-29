@@ -6,7 +6,7 @@ import servicetwo from '../../assets/servicetwo.png'
 import servicethree from '../../assets/servicethree.png'
 import servicefour from '../../assets/servicefour.png'
 import Servicesection from "../Servicesection/Servicesection";
-
+import Footer from "../Footer/Footer";
 
 const servicesData = [
   {
@@ -81,6 +81,7 @@ function Services() {
             <Servicesection key={index} {...service} />
           ))}
         </div>
+        <Footer/>
     </div>
   );
 }

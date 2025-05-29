@@ -11,6 +11,7 @@ import {
 import { SiGoogleanalytics } from "react-icons/si";
 import { BiTrendingUp } from "react-icons/bi";
 import { LuMountainSnow } from "react-icons/lu";
+import Footer from "../Footer/Footer";
 
 const benefits = [
   {
@@ -139,6 +140,7 @@ function Technology() {
           </p>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 }

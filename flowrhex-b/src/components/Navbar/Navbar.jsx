@@ -42,7 +42,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-white shadow-md lg:sticky lg:top-0 lg:z-50">
       {/* Top Bar */}
       <div className="bg-[#eb5a43] text-white text-xs sm:text-sm flex flex-col sm:flex-row justify-between items-center px-4 sm:px-6 lg:px-20 xl:px-32 py-2 sm:py-3">
         <span className="mb-2 sm:mb-0">
@@ -99,7 +99,7 @@ const Navbar = () => {
         </div>
 
         {/* Logo & Company Info */}
-        <div className="flex flex-col items-center lg:flex-row lg:items-center space-y-1 lg:space-y-0 lg:space-x-4 text-center lg:text-left mx-auto lg:mx-0">
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-left mx-auto lg:mx-0">
           <h1 data-testid="logo">
             <span
               style={{
@@ -124,9 +124,11 @@ const Navbar = () => {
               RHEX
             </span>
           </h1>
-          <p className="text-sm sm:text-base lg:text-lg text-[#3cc9c5]">
-            PROBURGEON Pvt Ltd
-          </p>
+          <div className="w-full">
+            <p className="text-sm sm:text-base lg:text-lg text-[#3cc9c5]">
+              PROBURGEON Pvt Ltd
+            </p>
+          </div>
         </div>
 
         {/* Contact Info with Motion Icon */}
@@ -142,7 +144,7 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Navigation */}
-      <nav className="hidden lg:flex lg:justify-start lg:space-x-12 bg-[#3cc9c5] text-white font-semibold py-4 lg:px-16 xl:px-28 sticky top-0 z-50">
+      <nav className="hidden lg:flex lg:justify-start lg:space-x-12 bg-[#3cc9c5] text-white font-semibold py-4 lg:px-16 xl:px-28">
         {menuItems.map((item) => {
           const isActive = location.pathname === item.path;
           return (

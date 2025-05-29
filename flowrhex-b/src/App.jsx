@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
@@ -9,9 +8,14 @@ import Services from './components/Services/Services';
 import Contact from './components/Contact/Contact';
 import TeamMemberDetails from './components/Team/Teammembers';
 import About from './components/About/About';
+import Scrollup from './components/Scrollup/Scrollup';
+
+
+
 function App() {
   return (
     <Router>
+      <Scrollup/>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -25,6 +29,5 @@ function App() {
     </Router>
   );
 }
+
 export default App;
-
-

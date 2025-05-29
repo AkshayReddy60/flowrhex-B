@@ -1,13 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";  // Add this import
-import productfour from '../../assets/productfour.png';
+import { Link } from "react-router-dom";  
+import Productfour from '../../assets/productfour.png';
 
-function ProductItem() {
+function ProductFour() {
   return (
     <section className="py-16  px-6">
       <div className="max-w-4xl mx-auto">
         <img
-          src={productfour}
+          src={Productfour}
           alt="Customized Unit"
           className="w-full h-auto rounded-md mb-8 object-cover shadow-md"
         />
@@ -35,4 +35,4 @@ function ProductItem() {
   );
 }
 
-export default ProductItem;
+export default ProductFour;
