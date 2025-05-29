@@ -6,8 +6,10 @@ import { GiNestedHexagons } from "react-icons/gi";
 import { motion } from "framer-motion";
 
 
-import Footer from "../Footer/Footer";
+import ProductTwo from "../ProductDetails/ProductTwo";
+import ProductThree from "../ProductDetails/ProductThree";
 
+import Footer from "../Footer/Footer";
 
 
 const productItems = [
