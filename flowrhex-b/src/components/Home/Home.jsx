@@ -5,6 +5,24 @@ import SingleWindowSolution from "./SecondComponent";
 import StatsDisplay from "./StatsDispaly";
 import HowWeWork from "./HowWeWork";
 import Footer from "../Footer/Footer";
+import { motion } from "framer-motion";
+
+
+const MotionIcon = ({ IconComponent }) => (
+  <motion.div
+    whileHover={{
+      scale: 2.0,
+      backgroundColor: "#f87171", // Tailwind red-400
+    }}
+    transition={{
+      type: "spring",
+      stiffness: 300,
+    }}
+    className="text-white text-2xl"  
+  >
+    <IconComponent />
+  </motion.div>
+);
 
 const features = [
   {
@@ -83,27 +101,46 @@ const Home = () => {
         </div>
 
         {/* Why Choose Us */}
-        <div className="mt-10 flex flex-col md:flex-row items-start gap-6">
+        <div className="max-w-7xl mt-10 flex flex-col md:flex-row items-start gap-10">
           {/* Title Section */}
           <div className="w-full md:w-[40%]">
-            <h2 className="text-2xl text-center font-bold text-gray-900 mb-6">
-              Why Choose Us?
-            </h2>
+            <h2
+  className="text-center mb-6"
+  style={{
+    fontFamily: 'Roboto, sans-serif',
+    fontSize: '40px',
+    fontWeight: 500,
+    lineHeight: '38px',
+    color: 'rgb(17, 51, 58)',
+  }}
+>
+  Why Choose Us?
+</h2>
+
           </div>
 
           {/* Features */}
-          <div className="w-full md:w-[60%]">
+          <div className="md:w-[60%]">
             <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 text-sm md:text-base">
               {features.map((feature, index) => (
-                <div key={index} className="flex items-start gap-4">
+                <div key={index} className="flex items-start gap-5">
                   <div className="mt-1">{feature.icon}</div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">
                       {feature.title}
                     </h3>
-                    <p className="text-gray-700 leading-relaxed">
-                      {feature.description}
-                    </p>
+                    <p
+  style={{
+    fontFamily: 'Roboto, sans-serif',
+    fontSize: '16px',
+    fontWeight: 300,
+    lineHeight: '24px',
+    color: 'rgb(145, 152, 153)',
+  }}
+>
+  {feature.description}
+</p>
+
                   </div>
                 </div>
               ))}
