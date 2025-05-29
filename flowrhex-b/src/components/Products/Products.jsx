@@ -4,11 +4,8 @@ import { Link } from "react-router-dom";
 import { FaExchangeAlt, FaHome, FaGem } from "react-icons/fa";
 import { GiNestedHexagons } from "react-icons/gi";
 import { motion } from "framer-motion";
-
-
 import ProductTwo from "../ProductDetails/ProductTwo";
 import ProductThree from "../ProductDetails/ProductThree";
-
 import Footer from "../Footer/Footer";
 
 
@@ -57,10 +54,10 @@ function Products() {
       </section>
 
       {/* Product Sections */}
-      <ProductOne />
+      
       <ProductTwo/>
       <ProductThree />
-      <ProductFour/>
+      
       <Footer/>
     </div>
   );
